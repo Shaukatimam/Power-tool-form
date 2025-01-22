@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAFCO Six Senses - Power Tool Issuance and Tracking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        select, input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>BAFCO Six Senses - Power Tool Issuance and Tracking Form</h1>
+    <form id="toolForm">
+        <label for="receiverName">Receiver Name *</label>
+        <select id="receiverName" name="receiverName" required>
+            <option value="Ravi Kumar Kannoujiya">Ravi Kumar Kannoujiya</option>
+            <option value="Krishna Shankar Singh">Krishna Shankar Singh</option>
+            <option value="Pintu Kumar">Pintu Kumar</option>
+            <option value="Mohammad Shahzar">Mohammad Shahzar</option>
+            <option value="Kamil Ali">Kamil Ali</option>
+            <option value="Ranjit Guar">Ranjit Guar</option>
+            <option value="Md. Monir Hossain">Md. Monir Hossain</option>
+            <option value="Bechu Choudhary">Bechu Choudhary</option>
+        </select>
+
+        <label for="issuerName">Issuer Name *</label>
+        <select id="issuerName" name="issuerName" required>
+            <option value="Abdul Latif">Abdul Latif</option>
+            <option value="Abdullah Mohammed">Abdullah Mohammed</option>
+        </select>
+
+        <label for="toolType">Type of Tool *</label>
+        <select id="toolType" name="toolType" required>
+            <option value="Grinder">Grinder</option>
+            <option value="Driller">Driller</option>
+        </select>
+
+        <label for="toolSerial">Tool Serial Number *</label>
+        <input type="text" id="toolSerial" name="toolSerial" required>
+
+        <label for="issueDate">Issue Date *</label>
+        <input type="date" id="issueDate" name="issueDate" required>
+
+        <label for="returnDate">Return Date *</label>
+        <input type="date" id="returnDate" name="returnDate" required>
+
+        <label for="issueCondition">Issue Condition *</label>
+        <select id="issueCondition" name="issueCondition" required>
+            <option value="New">New</option>
+            <option value="Good">Good</option>
+            <option value="Minor issue (working)">Minor issue (working)</option>
+        </select>
+
+        <label for="returnCondition">Return Condition *</label>
+        <select id="returnCondition" name="returnCondition" required>
+            <option value="Good">Good</option>
+            <option value="Minor issue (working)">Minor issue (working)</option>
+            <option value="Damaged (Not working)">Damaged (Not working)</option>
+        </select>
+
+        <label for="remarks">Remarks (If Any)</label>
+        <textarea id="remarks" name="remarks"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
